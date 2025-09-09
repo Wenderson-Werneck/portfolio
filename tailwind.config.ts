@@ -47,16 +47,25 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
+        // RPG Custom Colors
+        "hero-gold": "hsl(var(--hero-gold))",
+        "quest-blue": "hsl(var(--quest-blue))",
+        "magic-green": "hsl(var(--magic-green))",
+        "item-bronze": "hsl(var(--item-bronze))",
+      },
+      fontFamily: {
+        pixel: ['Press Start 2P', 'monospace'],
+        hero: ['Orbitron', 'monospace'],
+      },
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-card': 'var(--gradient-card)',
+        'gradient-button': 'var(--gradient-button)',
+      },
+      boxShadow: {
+        'rpg': 'var(--shadow-rpg)',
+        'glow': 'var(--shadow-glow)',
+        'magic': 'var(--shadow-magic)',
       },
       borderRadius: {
         lg: "var(--radius)",

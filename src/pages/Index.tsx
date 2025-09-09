@@ -1,12 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { HeroStatus } from "@/components/rpg/HeroStatus";
+import { QuestLog } from "@/components/rpg/QuestLog";
+import { SkillTree } from "@/components/rpg/SkillTree";
+import { ProjectCards } from "@/components/rpg/ProjectCards";
+import { Education } from "@/components/rpg/Education";
+import { FeedbackForm } from "@/components/rpg/FeedbackForm";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      {/* Hero Section - Character Status */}
+      <HeroStatus />
+      
+      {/* About Section */}
+      <QuestLog title="SOBRE MIM" id="sobre">
+        <p className="text-sm leading-relaxed text-center max-w-3xl mx-auto">
+          Profissional em transição para a área de Dados, trazendo uma mentalidade analítica e 
+          investigativa desenvolvida na resolução de problemas operacionais. Minha experiência 
+          prática em diagnósticos me permite não apenas extrair dados, mas compreendê-los para 
+          traduzir desafios de negócio em soluções funcionais.
+        </p>
+      </QuestLog>
+      
+      {/* Skills Section */}
+      <SkillTree />
+      
+      {/* Projects Section */}
+      <ProjectCards />
+      
+      {/* Education Section */}
+      <Education />
+      
+      {/* Feedback Section */}
+      <FeedbackForm />
     </div>
   );
 };
